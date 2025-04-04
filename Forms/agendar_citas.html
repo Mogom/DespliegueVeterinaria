@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/forms.css">
+    <title>Agendar Cita</title>
+</head>
+<body>
+    <header>
+        <img src="../img/[removal.ai]_5d625402-0c5d-4fad-bd96-36bf9bd0dfd6-ed5f3a15d92ba3ac6238a98da42bb01e.png" alt="" class="header-logo">
+        <h1 class="main-titulo">Agendar Cita</h1>
+        <a class="boton-salir" href="../index.html">
+            <img src="https://cdn-icons-png.flaticon.com/512/61/61208.png" alt=""> Home
+        </a>
+    </header>
+    <main>
+        <form class="register-form" action="procesar-cita.php" method="POST">
+            <label for="nombre">Nombre del Propietario:</label>
+            <input type="text" id="nombre" name="nombre" class="main-form__item" required>
+
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha" class="main-form__item" required>
+
+            <label for="hora">Hora:</label>
+            <input type="time" id="hora" name="hora" class="main-form__item" required>
+
+            <label for="mascota">Selecciona tu mascota:</label>
+            <select id="mascota" name="mascota" class="main-form__item" required>
+                <option value="Perro">Perro</option>
+                <option value="Gato">Gato</option>
+                <option value="Conejo">Conejo</option>
+                <option value="Ave">Ave</option>
+                <option value="Otro">Otro</option>
+            </select>
+
+            <label for="comentarios">Comentarios o motivos de la cita:</label>
+            <textarea id="comentarios" name="comentarios" class="main-form__item" rows="4"></textarea>
+
+            <input type="submit" id="entrar" class="main-form__item" value="Agendar Cita">
+        </form>
+
+        <aside class="main-aside">
+            <img src="https://github.com/Mogom/VeterinariaDemo/blob/main/Imgs/%5Bremoval.ai%5D_181ee0a4-d9d4-4b7a-9429-4ed02de7add6-captura-de-pantalla-2024-10-08-200743.png?raw=true" alt="" class="main-aside__item">
+            <h1 class="main-aside__item">OverPets</h1>
+            <p class="main-aside__item">Velamos por la salud de tu mascota.</p>
+        </aside>
+    </main>
+    <footer></footer>
+</body>
+</html>

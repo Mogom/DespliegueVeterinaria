@@ -1,0 +1,61 @@
+[
+{"id":"1", 
+"nombre":"Consulta Veterinaria General",
+"descripcion":"Consulta médica general para mascotas",
+"precio":50.00,
+"url":"https://www.laclinicaveterinaria.com/wp-content/uploads/2021/09/medicina-preventivaB.jpg"},
+
+{"id":"2", 
+"nombre":"Vacunación",
+ "descripcion":"Aplicación de vacunas esenciales para perros y gatos",
+"precio":25.00,
+"url":"https://www.animalshealth.es/fileuploads/news/mesa-de-trabajo-1-los-veterinarios-tambien-reivindican-la-importancia-de-la-vacunacion16275631031.jpg"},
+
+{"id":"3", 
+"nombre":"Desparasitación",
+"descripcion": "Tratamiento para la eliminación de parásitos internos y externos", 
+"precio":30.00,
+"url":"https://www.kivet.com/wp-content/uploads/2022/07/tipos_antiparasitarios_internos.jpg"},
+
+{"id":"4", 
+"nombre":"Limpieza Dental",
+"descripcion": "Limpieza dental para prevenir problemas bucales en mascotas", 
+"precio":70.00,
+"url":"https://www.simbiosisveterinaria.com/sites/default/files/styles/convertir_webp/public/blog/2021-03/portada-higiene-salud-bucodental-perros-y-gatos.jpg?itok=RrJ_r0ev"},
+
+{"id":"5", 
+"nombre":"Baño y Corte de Pelo",
+"descripcion": "Servicio completo de baño y corte de pelo para mascotas", 
+"precio":40.00,
+"url":"https://www.clinicaveterinariamh.com/wp-content/uploads/2023/08/45.jpg"},
+
+{"id":"6", 
+"nombre":"Cirugía Menor",
+"descripcion": "Procedimientos quirúrgicos menores para mascotas", 
+"precio":200.00,
+"url":"https://www.animalshealthcenter.com.co/wp-content/uploads/2020/01/cirujia-veterinaria.jpg"},
+
+{"id":"7", 
+"nombre":"Consulta de Emergencia",
+"descripcion": "Atención médica de emergencia para mascotas",
+"precio":100.00,
+"url":"https://animalcity.es/clinica/wp-content/uploads/2021/08/veterinary-4940425_1280-min-1024x682.jpg"},
+
+{"id":"8", 
+"nombre":"Radiografía",
+"descripcion": "Radiografía para diagnóstico de problemas internos en mascotas",
+"precio":80.00,
+"url":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_jaOuGSyLJVuMRsuA_q2ZCAFdqo0KJaylcw&s"},
+
+{"id":"9", 
+"nombre":"Esterilización/Castración",
+"descripcion": "Procedimiento quirúrgico para esterilizar o castrar mascotas",
+"precio":150.00,
+"url":"https://zootecniasl.com/blog/wp-content/uploads/2023/02/gato-esterilizado-1.jpg"},
+
+{"id":"10",
+"nombre":"Terapia Física",
+"descripcion": "Sesiones de terapia física para la rehabilitación de mascotas", 
+"precio":60.00,
+"url":"https://www.portalveterinaria.mx/upload/20220922141645Fisioterapiayrehabilitacionunaoportunidad.jpg"}
+]

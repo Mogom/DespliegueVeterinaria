@@ -1,13 +1,14 @@
-// script.js
 document.addEventListener('DOMContentLoaded', function() {
     // Mobile menu toggle
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
     const navList = document.querySelector('.nav-list');
     
-    mobileMenuBtn.addEventListener('click', function() {
-        navList.classList.toggle('active');
-        this.querySelector('i').classList.toggle('fa-times');
-    });
+    if (mobileMenuBtn && navList) {
+        mobileMenuBtn.addEventListener('click', function() {
+            navList.classList.toggle('active');
+            this.querySelector('i').classList.toggle('fa-times');
+        });
+    }
     
     // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -25,9 +26,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
                 
                 // Close mobile menu if open
-                if (navList.classList.contains('active')) {
+                if (navList && navList.classList.contains('active')) {
                     navList.classList.remove('active');
-                    mobileMenuBtn.querySelector('i').classList.remove('fa-times');
+                    if (mobileMenuBtn) {
+                        mobileMenuBtn.querySelector('i').classList.remove('fa-times');
+                    }
                 }
             }
         });
@@ -35,26 +38,28 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Sticky header on scroll
     const header = document.querySelector('.main-header');
-    let lastScroll = 0;
-    
-    window.addEventListener('scroll', function() {
-        const currentScroll = window.pageYOffset;
+    if (header) {
+        let lastScroll = 0;
         
-        if (currentScroll <= 0) {
-            header.classList.remove('scroll-up');
-            return;
-        }
-        
-        if (currentScroll > lastScroll && !header.classList.contains('scroll-down')) {
-            header.classList.remove('scroll-up');
-            header.classList.add('scroll-down');
-        } else if (currentScroll < lastScroll && header.classList.contains('scroll-down')) {
-            header.classList.remove('scroll-down');
-            header.classList.add('scroll-up');
-        }
-        
-        lastScroll = currentScroll;
-    });
+        window.addEventListener('scroll', function() {
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll <= 0) {
+                header.classList.remove('scroll-up');
+                return;
+            }
+            
+            if (currentScroll > lastScroll && !header.classList.contains('scroll-down')) {
+                header.classList.remove('scroll-up');
+                header.classList.add('scroll-down');
+            } else if (currentScroll < lastScroll && header.classList.contains('scroll-down')) {
+                header.classList.remove('scroll-down');
+                header.classList.add('scroll-up');
+            }
+            
+            lastScroll = currentScroll;
+        });
+    }
     
     // Animation on scroll
     const animateOnScroll = function() {
@@ -73,6 +78,9 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', animateOnScroll);
     animateOnScroll(); // Run once on page load
     
-    // Current year for footer
-    document.getElementById('current-year').textContent = new Date().getFullYear();
+    // Current year for footer - with null check
+    const yearElement = document.getElementById('current-year');
+    if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
+    }
 });

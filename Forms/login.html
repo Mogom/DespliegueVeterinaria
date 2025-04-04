@@ -1,37 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OverPets - Formularios</title>
     <link rel="stylesheet" href="../CSS/forms.css">
-    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
-    <header>
-        <img src="../img/[removal.ai]_5d625402-0c5d-4fad-bd96-36bf9bd0dfd6-ed5f3a15d92ba3ac6238a98da42bb01e.png" alt="" class="header-logo">
-        <h1 class="main-titulo">Inicio Sesion</h1>
-        <a class="boton-salir" href="../index.html"><img src="https://cdn-icons-png.flaticon.com/512/61/61208.png" alt="">Home</a>
-    </header>
-    <main>
-        <form class="main-form" action="">
-            <label for="email">Email:</label>
-            <input type="email" class="main-form__item">
-            <label for="password">Contraseña:</label>
-            <input type="password" class="main-form__item">
-            <section class="remember-form">
-                <label for="remember" id="remember"> Recordar contraseña</label>
-                <input type="checkbox" id="remember" class="main-form__item" name="vehicle3" value="Boat">
-            </section>
-            <input type="button" id="entrar" class="main-form__item" value="Entrar">
-            <p><a href="">¿Olvidaste tu contraseña?</a></p>
-            <p>¿No tienes una cuenta? <a href="./register_propietario.html">Registrate</a></p>
-        </form>
-        <aside class="main-aside">
-            <img src="https://github.com/Mogom/VeterinariaDemo/blob/main/Imgs/%5Bremoval.ai%5D_181ee0a4-d9d4-4b7a-9429-4ed02de7add6-captura-de-pantalla-2024-10-08-200743.png?raw=true" alt="" class="main-aside__item">
-            <h1 class="main-aside__item">OverPets</h1>
-            <p class="main-aside__item">Velamos por la salud de tu mascota.</p>
-        </aside>
-    </main>
-    <footer></footer>
+<body class="form-page">
+    <div class="form-container">
+        <!-- Header consistente -->
+        <header class="form-header">
+            <div class="header-content">
+                <img src="../img/[removal.ai]_5d625402-0c5d-4fad-bd96-36bf9bd0dfd6-ed5f3a15d92ba3ac6238a98da42bb01e.png" alt="Logo OverPets" class="header-logo">
+                <h1 class="form-title">Login</h1>
+                <a href="../index.html" class="home-btn">
+                    <i class="fas fa-home"></i> Inicio
+                </a>
+            </div>
+        </header>
+
+        <!-- Contenido principal -->
+        <main class="form-main">
+        
+            
+            <form class="modern-form" id="login-form">
+                <div class="form-header">
+                    <h2><i class="fas fa-user-circle"></i> Iniciar Sesión</h2>
+                    <p>Ingresa tus credenciales para acceder a tu cuenta</p>
+                </div>
+            
+                <div class="form-group">
+                    <label for="email">Correo Electrónico</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="email" name="email" placeholder="tucorreo@example.com" required>
+                    </div>
+                </div>
+            
+                <div class="form-group">
+                    <label for="password">Contraseña</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña" required>
+                        <i class="fas fa-eye toggle-password"></i>
+                    </div>
+                </div>
+            
+                <div class="login-options">
+                    <div class="remember-me">
+                        <input type="checkbox" id="remember" name="remember">
+                        <label for="remember">Recordar sesión</label>
+                    </div>
+                    <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
+                </div>
+            
+                <div class="form-actions">
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-sign-in-alt"></i> Iniciar Sesión
+                    </button>
+                </div>
+            
+                <div class="register-link">
+                    ¿No tienes una cuenta? <a href="./register_propietario.html">Regístrate aquí</a>
+                </div>
+            </form>
+        </main>
+    </div>
+
+    <script src="../scripts/forms.js"></script>
 </body>
 </html>
+

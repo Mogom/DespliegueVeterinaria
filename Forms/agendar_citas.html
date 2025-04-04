@@ -1,51 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OverPets - Formularios</title>
     <link rel="stylesheet" href="../CSS/forms.css">
-    <title>Agendar Cita</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
-    <header>
-        <img src="../img/[removal.ai]_5d625402-0c5d-4fad-bd96-36bf9bd0dfd6-ed5f3a15d92ba3ac6238a98da42bb01e.png" alt="" class="header-logo">
-        <h1 class="main-titulo">Agendar Cita</h1>
-        <a class="boton-salir" href="../index.html">
-            <img src="https://cdn-icons-png.flaticon.com/512/61/61208.png" alt=""> Home
-        </a>
-    </header>
-    <main>
-        <form class="register-form" action="procesar-cita.php" method="POST">
-            <label for="nombre">Nombre del Propietario:</label>
-            <input type="text" id="nombre" name="nombre" class="main-form__item" required>
+<body class="form-page">
+    <div class="form-container">
+        <!-- Header consistente -->
+        <header class="form-header">
+            <div class="header-content">
+                <img src="../img/[removal.ai]_5d625402-0c5d-4fad-bd96-36bf9bd0dfd6-ed5f3a15d92ba3ac6238a98da42bb01e.png" alt="Logo OverPets" class="header-logo">
+                <h1 class="form-title">Agendar Cita</h1>
+                <a href="../index.html" class="home-btn">
+                    <i class="fas fa-home"></i> Inicio
+                </a>
+            </div>
+        </header>
 
-            <label for="fecha">Fecha:</label>
-            <input type="date" id="fecha" name="fecha" class="main-form__item" required>
+        <!-- Contenido principal -->
+        <main class="form-main">
+            <!-- Formulario -->
+            <form class="modern-form" id="appointment-form">
+                <div class="form-header">
+                    <h2><i class="fas fa-calendar-alt"></i> Nueva Cita</h2>
+                    <p>Complete los datos para agendar una cita</p>
+                </div>
 
-            <label for="hora">Hora:</label>
-            <input type="time" id="hora" name="hora" class="main-form__item" required>
+                <div class="form-group">
+                    <label for="nombre">Nombre del Propietario</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre completo" required>
+                    </div>
+                </div>
 
-            <label for="mascota">Selecciona tu mascota:</label>
-            <select id="mascota" name="mascota" class="main-form__item" required>
-                <option value="Perro">Perro</option>
-                <option value="Gato">Gato</option>
-                <option value="Conejo">Conejo</option>
-                <option value="Ave">Ave</option>
-                <option value="Otro">Otro</option>
-            </select>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="fecha">Fecha</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-calendar-day"></i>
+                            <input type="date" id="fecha" name="fecha" required>
+                        </div>
+                    </div>
 
-            <label for="comentarios">Comentarios o motivos de la cita:</label>
-            <textarea id="comentarios" name="comentarios" class="main-form__item" rows="4"></textarea>
+                    <div class="form-group">
+                        <label for="hora">Hora</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-clock"></i>
+                            <input type="time" id="hora" name="hora" required>
+                        </div>
+                    </div>
+                </div>
 
-            <input type="submit" id="entrar" class="main-form__item" value="Agendar Cita">
-        </form>
+                <div class="form-group">
+                    <label for="mascota">Tipo de Mascota</label>
+                    <div class="select-with-icon">
+                        <i class="fas fa-paw"></i>
+                        <select id="mascota" name="mascota" required>
+                            <option value="" disabled selected>Seleccione una opción</option>
+                            <option value="Perro">Perro</option>
+                            <option value="Gato">Gato</option>
+                            <option value="Conejo">Conejo</option>
+                            <option value="Ave">Ave</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                    </div>
+                </div>
 
-        <aside class="main-aside">
-            <img src="https://github.com/Mogom/VeterinariaDemo/blob/main/Imgs/%5Bremoval.ai%5D_181ee0a4-d9d4-4b7a-9429-4ed02de7add6-captura-de-pantalla-2024-10-08-200743.png?raw=true" alt="" class="main-aside__item">
-            <h1 class="main-aside__item">OverPets</h1>
-            <p class="main-aside__item">Velamos por la salud de tu mascota.</p>
-        </aside>
-    </main>
-    <footer></footer>
+                <div class="form-group">
+                    <label for="comentarios">Motivo de la cita</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-comment-medical"></i>
+                        <textarea id="comentarios" name="comentarios" rows="4" placeholder="Describa el motivo de la cita"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-calendar-check"></i> Agendar Cita
+                    </button>
+                </div>
+            </form>
+
+            <!-- Banner lateral -->
+            <aside class="form-banner">
+                <div class="banner-content">
+                    <img src="https://github.com/Mogom/VeterinariaDemo/blob/main/Imgs/%5Bremoval.ai%5D_181ee0a4-d9d4-4b7a-9429-4ed02de7add6-captura-de-pantalla-2024-10-08-200743.png?raw=true" alt="Mascota feliz" class="banner-image">
+                    <h2>OverPets</h2>
+                    <p>Velamos por la salud de tu mascota</p>
+                    <div class="banner-features">
+                        <div class="feature">
+                            <i class="fas fa-clock"></i>
+                            <span>Atención 24/7</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-user-md"></i>
+                            <span>Profesionales calificados</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-heart"></i>
+                            <span>Cuidado con amor</span>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </main>
+    </div>
+
+    <script src="../scripts/forms.js"></script>
 </body>
 </html>

@@ -1,216 +1,347 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Veterinaria especializada en el cuidado integral de mascotas. Ofrecemos servicios de urgencias,
-     consultas veterinarias, cirugías, vacunación, productos para mascotas y atención 24/7. Tu mascota merece el mejor cuidado. ¡Agenda tu cita ahora!">
-     <meta name="keywords" content="veterinaria, cuidado de mascotas, consultas veterinarias, urgencias veterinarias, atención 24/7, 
-     productos para mascotas, cirugías, vacunación, veterinario cerca de mí, clínica veterinaria, servicios veterinarios">
+    <meta name="description" content="Veterinaria especializada en el cuidado integral de mascotas. Servicios de urgencias, consultas, cirugías, vacunación y atención 24/7.">
+    <meta name="keywords" content="veterinaria, cuidado de mascotas, urgencias veterinarias, atención 24/7, clínica veterinaria">
     <link rel="stylesheet" href="CSS/index.css">
-    <title>Veterinaria</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>OverPets - Clínica Veterinaria 24 horas</title>
 </head>
 <body>
-    <header>
-        <div class="header-call">
-            <p>¡Llámanos 311 467 5099---------Atencion abierta las 24 horas!</p>
+    <!-- Barra superior de contacto -->
+    <div class="contact-bar">
+        <p><i class="fas fa-phone-alt"></i> 311 467 5099 - Atención 24 horas</p>
+    </div>
+
+    <!-- Header con logo y navegación -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="./img/[removal.ai]_5d625402-0c5d-4fad-bd96-36bf9bd0dfd6-ed5f3a15d92ba3ac6238a98da42bb01e.png" alt="Logo OverPets" class="logo">
+            </div>
+            
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#" class="nav-link active"><i class="fas fa-home"></i> Inicio</a></li>
+                    <li class="nav-item"><a href="mainbar_items/servicios.html" class="nav-link"><i class="fas fa-clinic-medical"></i> Servicios</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-ambulance"></i> Urgencias</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-calendar-check"></i> Cita Prioritaria</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-bone"></i> Productos</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-envelope"></i> Contacto</a></li>
+                    <li class="nav-item login-item"><a href="Forms/login.html" class="nav-link login-btn"><i class="fas fa-user"></i> Iniciar Sesión</a></li>
+                </ul>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
         </div>
-        <picture class="header-content">
-            <img class="header-content__img" src="https://github.com/Mogom/VeterinariaDemo/blob/main/Imgs/Sin-titulo-2_Mesa-de-trabajo-1-1-e1666113775539-1024x684.png?raw=true" alt="">
-        </picture>
-        <nav>
-            <ul class="main-bar">
-                <li class="main-bar__item"><img src="./img/[removal.ai]_5d625402-0c5d-4fad-bd96-36bf9bd0dfd6-ed5f3a15d92ba3ac6238a98da42bb01e.png" alt=""></li>
-                <li class="main-bar__item"><a href="#">Inicio</a></li>
-                <li class="main-bar__item"><a href="mainbar_items/servicios.html">Servicios</a></li>
-                <li class="main-bar__item"><a href="#">Urgencias</a></li>
-                <li class="main-bar__item"><a href="#">Cita Prioritaria</a></li>
-                <li class="main-bar__item"><a href="#">Productos</a></li>
-                <li class="main-bar__item"><a href="#">Contacto</a></li>
-                <li id ="inicio-sesion" class="main-bar__item"><a href="Forms/login.html">Inicio Sesion </a><img src="https://cdn-icons-png.flaticon.com/512/17/17547.png" alt=""></li>
-            </ul>
-        </nav>
     </header>
-    <main>
-        <section class="main-introduction">
-            <article class="main-introduction__article">
-                <h1 class="main-introduction__item">OverPets</h1>
-                <h3 class="main-introduction__item">Clinica Veterinaria 24 horas</h3>
-                <p class="main-introduction__item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel facilis nisi nulla sequi 
-                    accusamus nesciunt commodi? Explicabo incidunt reprehenderit ab, tempore ipsum laborum accusamus nisi, quo tempora ducimus vero amet?
-                    <img src="https://github.com/Mogom/VeterinariaDemo/blob/main/Imgs/cerca-veterinario-cuidando-perro.jpg?raw=true" alt="">
-                
-                </p>
-            </article>
-        </section>
-        <section class="first-section">
-            <h1 class="first-section__item">Todo para tu mascota</h1>
-            <p class="first-section__item">Atendemos todo tipo de especies!!!</p>
-            <article class="first-section__main-div">
-                <div class="first-section__perro">
-                    <img src="https://raw.githubusercontent.com/Mogom/VeterinariaDemo/refs/heads/main/Imgs/perro.webp" alt="">
-                    <h3>Caninos</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eveniet ea aperiam, ad 
-                        nobis tenetur distinctio architecto, harum dolorum blanditiis assumenda. Sint veniam tenetur maxime sequi a dolores magnam eaque.</p>
+
+    <!-- Hero Banner -->
+    <section class="hero-banner">
+        <div class="hero-content">
+            <h1 class="hero-title">OverPets</h1>
+            <h2 class="hero-subtitle">Clinica Veterinaria 24 horas</h2>
+            <p class="hero-text">Cuidamos de tu mascota como si fuera nuestra. Servicios médicos, estéticos y de emergencia con el más alto estándar de calidad.</p>
+            <div class="hero-btns">
+                <a href="#" class="btn primary-btn">Urgencias <i class="fas fa-phone"></i></a>
+                <a href="#" class="btn secondary-btn">Agendar Cita <i class="fas fa-calendar-alt"></i></a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://github.com/Mogom/VeterinariaDemo/blob/main/Imgs/cerca-veterinario-cuidando-perro.jpg?raw=true" alt="Veterinario cuidando perro">
+        </div>
+    </section>
+
+    <!-- Sección de Especies -->
+    <section class="species-section">
+        <div class="section-header">
+            <h2 class="section-title">Todo para tu mascota</h2>
+            <p class="section-subtitle">Atendemos todo tipo de especies</p>
+        </div>
+        
+        <div class="species-grid">
+            <!-- Tarjeta Caninos -->
+            <div class="species-card">
+                <div class="card-icon">
+                    <img src="https://raw.githubusercontent.com/Mogom/VeterinariaDemo/refs/heads/main/Imgs/perro.webp" alt="Icono perro">
                 </div>
-                <div class="first-section__gato">
-                    <img src="https://github.com/Mogom/VeterinariaDemo/blob/main/Imgs/Gatito-transp.png?raw=true" alt="">
-                    <h3>Felinos</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eveniet ea aperiam, ad 
-                        nobis tenetur distinctio architecto, harum dolorum blanditiis assumenda. Sint veniam tenetur maxime sequi a dolores magnam eaque.</p>
+                <h3 class="card-title">Caninos</h3>
+                <p class="card-text">Consulta general, vacunación, cirugías y cuidados especializados para tu perro.</p>
+                <a href="#" class="card-link">Ver servicios <i class="fas fa-arrow-right"></i></a>
+            </div>
+            
+            <!-- Tarjeta Felinos -->
+            <div class="species-card">
+                <div class="card-icon">
+                    <img src="https://github.com/Mogom/VeterinariaDemo/blob/main/Imgs/Gatito-transp.png?raw=true" alt="Icono gato">
                 </div>
-                <div class="first-section__roedor">
-                    <img src="https://github.com/Mogom/VeterinariaDemo/blob/main/Imgs/f5260e17190cecb544b4ff7f540831ec.png?raw=true" alt="">
-                    <h3>Roedores</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eveniet ea aperiam, ad 
-                        nobis tenetur distinctio architecto, harum dolorum blanditiis assumenda. Sint veniam tenetur maxime sequi a dolores magnam eaque.</p>
+                <h3 class="card-title">Felinos</h3>
+                <p class="card-text">Atención especializada para gatos con espacios diseñados para su comodidad.</p>
+                <a href="#" class="card-link">Ver servicios <i class="fas fa-arrow-right"></i></a>
+            </div>
+            
+            <!-- Tarjeta Roedores -->
+            <div class="species-card">
+                <div class="card-icon">
+                    <img src="https://github.com/Mogom/VeterinariaDemo/blob/main/Imgs/f5260e17190cecb544b4ff7f540831ec.png?raw=true" alt="Icono roedor">
                 </div>
-                <div class="first-section__aves">
-                    <img src="https://github.com/Mogom/VeterinariaDemo/blob/main/Imgs/agapornis%20Fisher%20nuevo.png?raw=true" alt="">
-                    <h3>Aves</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eveniet ea aperiam, ad 
-                        nobis tenetur distinctio architecto, harum dolorum blanditiis assumenda. Sint veniam tenetur maxime sequi a dolores magnam eaque.</p>
+                <h3 class="card-title">Roedores</h3>
+                <p class="card-text">Cuidados especiales para conejos, hámsters, cobayas y otros pequeños mamíferos.</p>
+                <a href="#" class="card-link">Ver servicios <i class="fas fa-arrow-right"></i></a>
+            </div>
+            
+            <!-- Tarjeta Aves -->
+            <div class="species-card">
+                <div class="card-icon">
+                    <img src="https://github.com/Mogom/VeterinariaDemo/blob/main/Imgs/agapornis%20Fisher%20nuevo.png?raw=true" alt="Icono ave">
                 </div>
-                <div class="first-section__otros">
-                    <img src="https://github.com/Mogom/VeterinariaDemo/blob/main/Imgs/2.Animales-de-granja.png?raw=true" alt="">
-                    <h3>Otros</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eveniet ea aperiam, ad 
-                        nobis tenetur distinctio architecto, harum dolorum blanditiis assumenda. Sint veniam tenetur maxime sequi a dolores magnam eaque.</p>
+                <h3 class="card-title">Aves</h3>
+                <p class="card-text">Atención veterinaria especializada en aves domésticas y exóticas.</p>
+                <a href="#" class="card-link">Ver servicios <i class="fas fa-arrow-right"></i></a>
+            </div>
+            
+            <!-- Tarjeta Otros -->
+            <div class="species-card">
+                <div class="card-icon">
+                    <img src="https://github.com/Mogom/VeterinariaDemo/blob/main/Imgs/2.Animales-de-granja.png?raw=true" alt="Icono otros animales">
                 </div>
-            </article>
-        </section>
-        <article class="second-section">
-            <section class="second-section__item">
-                <img src="https://github.com/Mogom/VeterinariaDemo/blob/main/Imgs/cl%C3%ADnica-veterinaria.jpg?raw=true" alt="">
-                <h1>Atencion Medica</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, adipisci quas eaque assumenda sint libero 
-                    repellendus consequuntur harum. Magnam, consequuntur aperiam voluptatem quod dicta necessitatibus possimus 
-                    impedit velit architecto asperiores.</p>
-            </section>
-            <section class="second-section__item">
-                <img src="https://github.com/Mogom/VeterinariaDemo/blob/main/Imgs/spa-canino-la-experiencia-de-lujo-para-consentir-a-tu-perro.jpg?raw=true" alt="">
-                <h1>Spa</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, adipisci quas eaque assumenda sint libero 
-                    repellendus consequuntur harum. Magnam, consequuntur aperiam voluptatem quod dicta necessitatibus possimus 
-                    impedit velit architecto asperiores.</p>
-            </section>
-            <section class="second-section__item">
-                <img src="https://raw.githubusercontent.com/Mogom/VeterinariaDemo/refs/heads/main/Imgs/urgencias-veterinarias-mexico-animal-home-jpg.webp" alt="">
-                <h1>Urgencias</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, adipisci quas eaque assumenda sint libero 
-                    repellendus consequuntur harum. Magnam, consequuntur aperiam voluptatem quod dicta necessitatibus possimus 
-                    impedit velit architecto asperiores.</p>
-            </section>
-        </article>
-        <section class="third-section">
-            <div class="third-section__item">
-                <h1>Cuidados para tu mascota</h1>
-                <ul>
-                    <li><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                        Voluptatum et praesentium earum delectus accusantium 
-                        officia ad exercitationem esse, voluptatem, ipsa quod molestiae! Asperiores
-                         laboriosam fugiat est voluptate molestiae, aut sunt.
-                        <img src="https://github.com/Mogom/VeterinariaDemo/blob/main/Imgs/1540540260670.jpg?raw=true" alt="">
-                        </p></li>
-                    <li><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                            Voluptatum et praesentium earum delectus accusantium 
-                            officia ad exercitationem esse, voluptatem, ipsa quod molestiae! Asperiores
-                             laboriosam fugiat est voluptate molestiae, aut sunt.
-                             <img src="https://github.com/Mogom/VeterinariaDemo/blob/main/Imgs/770_1554966282blog_post_jugetes_1.jpg?raw=true" alt="">
-                        </p></li>
-                    <li><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                            Voluptatum et praesentium earum delectus accusantium 
-                            officia ad exercitationem esse, voluptatem, ipsa quod molestiae! Asperiores
-                             laboriosam fugiat est voluptate molestiae, aut sunt.
-                             <img src="https://raw.githubusercontent.com/Mogom/VeterinariaDemo/refs/heads/main/Imgs/fireworks-kB8--1248x698%40abc.webp" alt="">
-                        </p></li>                              
+                <h3 class="card-title">Otros</h3>
+                <p class="card-text">Reptiles, anfibios y animales de granja. Contamos con especialistas para cada especie.</p>
+                <a href="#" class="card-link">Ver servicios <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Servicios -->
+    <section class="services-section">
+        <div class="section-header">
+            <h2 class="section-title">Nuestros Servicios</h2>
+            <p class="section-subtitle">Cuidado integral para tu mascota</p>
+        </div>
+        
+        <div class="services-grid">
+            <!-- Servicio 1 -->
+            <div class="service-card">
+                <div class="service-img">
+                    <img src="https://github.com/Mogom/VeterinariaDemo/blob/main/Imgs/cl%C3%ADnica-veterinaria.jpg?raw=true" alt="Atención médica">
+                </div>
+                <div class="service-content">
+                    <h3 class="service-title">Atención Médica</h3>
+                    <p class="service-text">Consultas generales, diagnóstico por imágenes, laboratorio clínico y tratamientos especializados.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Consultas preventivas</li>
+                        <li><i class="fas fa-check"></i> Diagnóstico avanzado</li>
+                        <li><i class="fas fa-check"></i> Hospitalización</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Servicio 2 -->
+            <div class="service-card">
+                <div class="service-img">
+                    <img src="https://github.com/Mogom/VeterinariaDemo/blob/main/Imgs/spa-canino-la-experiencia-de-lujo-para-consentir-a-tu-perro.jpg?raw=true" alt="Spa para mascotas">
+                </div>
+                <div class="service-content">
+                    <h3 class="service-title">Spa & Estética</h3>
+                    <p class="service-text">Servicios de belleza y cuidado personal para que tu mascota luzca y se sienta mejor.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Baño terapéutico</li>
+                        <li><i class="fas fa-check"></i> Corte de pelo</li>
+                        <li><i class="fas fa-check"></i> Limpieza dental</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Servicio 3 -->
+            <div class="service-card">
+                <div class="service-img">
+                    <img src="https://raw.githubusercontent.com/Mogom/VeterinariaDemo/refs/heads/main/Imgs/urgencias-veterinarias-mexico-animal-home-jpg.webp" alt="Urgencias veterinarias">
+                </div>
+                <div class="service-content">
+                    <h3 class="service-title">Urgencias 24/7</h3>
+                    <p class="service-text">Atención inmediata para emergencias las 24 horas del día, los 365 días del año.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Equipo de emergencias</li>
+                        <li><i class="fas fa-check"></i> Ambulancia veterinaria</li>
+                        <li><i class="fas fa-check"></i> Cuidados intensivos</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Testimonios -->
+    <section class="testimonials-section">
+        <div class="section-header">
+            <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+            <p class="section-subtitle">Experiencias reales de dueños de mascotas</p>
+        </div>
+        
+        <div class="testimonials-container">
+            <!-- Testimonio 1 -->
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <img src="https://raw.githubusercontent.com/Mogom/VeterinariaDemo/refs/heads/main/Imgs/Vejetasietesietesiete.webp" alt="Cliente satisfecho" class="client-img">
+                    <div class="client-info">
+                        <h4 class="client-name">María González</h4>
+                        <div class="client-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="testimonial-text">"Cuando mi perro tuvo una emergencia a medianoche, el equipo de OverPets lo atendió inmediatamente. Su profesionalismo y cuidado salvaron su vida. Estoy eternamente agradecida."</p>
+            </div>
+            
+            <!-- Testimonio 2 -->
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <img src="https://raw.githubusercontent.com/Mogom/VeterinariaDemo/refs/heads/main/Imgs/Notch.webp" alt="Cliente satisfecho" class="client-img">
+                    <div class="client-info">
+                        <h4 class="client-name">Carlos Mendoza</h4>
+                        <div class="client-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="testimonial-text">"Llevo a mis 3 gatos aquí desde hace años. Los veterinarios son extremadamente conocedores y siempre explican todo con detalle. El spa felino es el favorito de mis mininos."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Sedes -->
+    <section class="locations-section">
+        <div class="section-header">
+            <h2 class="section-title">Nuestras Sedes</h2>
+            <p class="section-subtitle">Encuentra la más cercana a ti</p>
+        </div>
+        
+        <div class="locations-grid">
+            <!-- Sede 1 -->
+            <div class="location-card">
+                <div class="location-img">
+                    <img src="https://github.com/Mogom/VeterinariaDemo/blob/main/Imgs/20921-Centro-Veterinario-Marina-Ibarguen-QH2S6.jpg?raw=true" alt="Sede principal">
+                    <div class="location-badge">24 Horas</div>
+                </div>
+                <div class="location-info">
+                    <h3 class="location-title">Sede Principal</h3>
+                    <p class="location-address"><i class="fas fa-map-marker-alt"></i> Calle 123 #45-67, Bogotá</p>
+                    <p class="location-hours"><i class="fas fa-clock"></i> Abierto las 24 horas</p>
+                    <a href="#" class="location-btn"><i class="fas fa-directions"></i> Cómo llegar</a>
+                </div>
+            </div>
+            
+            <!-- Sede 2 -->
+            <div class="location-card">
+                <div class="location-img">
+                    <img src="https://github.com/Mogom/VeterinariaDemo/blob/main/Imgs/fachada-faunia.jpg?raw=true" alt="Sede norte">
+                </div>
+                <div class="location-info">
+                    <h3 class="location-title">Sede Norte</h3>
+                    <p class="location-address"><i class="fas fa-map-marker-alt"></i> Carrera 89 #72-35, Bogotá</p>
+                    <p class="location-hours"><i class="fas fa-clock"></i> Lunes a Viernes: 8am - 8pm</p>
+                    <p class="location-hours">Sábados: 9am - 5pm</p>
+                    <a href="#" class="location-btn"><i class="fas fa-directions"></i> Cómo llegar</a>
+                </div>
+            </div>
+            
+            <!-- Sede 3 -->
+            <div class="location-card">
+                <div class="location-img">
+                    <img src="https://github.com/Mogom/VeterinariaDemo/blob/main/Imgs/frontispng.png?raw=true" alt="Sede sur">
+                    <div class="location-badge">Nueva</div>
+                </div>
+                <div class="location-info">
+                    <h3 class="location-title">Sede Sur</h3>
+                    <p class="location-address"><i class="fas fa-map-marker-alt"></i> Avenida 68 #23-45 Sur, Bogotá</p>
+                    <p class="location-hours"><i class="fas fa-clock"></i> Lunes a Sábado: 7am - 9pm</p>
+                    <p class="location-hours">Domingos: 9am - 4pm</p>
+                    <a href="#" class="location-btn"><i class="fas fa-directions"></i> Cómo llegar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="./img/[removal.ai]_5d625402-0c5d-4fad-bd96-36bf9bd0dfd6-ed5f3a15d92ba3ac6238a98da42bb01e.png" alt="Logo OverPets">
+                <p class="footer-slogan">Cuidando a tus mascotas desde 2010</p>
+                <div class="footer-social">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h4 class="links-title">Servicios</h4>
+                <ul class="links-list">
+                    <li><a href="#" class="footer-link">Consultas</a></li>
+                    <li><a href="#" class="footer-link">Urgencias</a></li>
+                    <li><a href="#" class="footer-link">Cirugías</a></li>
+                    <li><a href="#" class="footer-link">Vacunación</a></li>
+                    <li><a href="#" class="footer-link">Spa y Estética</a></li>
                 </ul>
             </div>
-            <aside class="third-section__item">
-                <h2>Reseña de usuario</h2>
-                <img src="https://raw.githubusercontent.com/Mogom/VeterinariaDemo/refs/heads/main/Imgs/Vejetasietesietesiete.webp" alt="">
-                <h3>Nombre de Usuario</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur asperiores suscipit voluptates inventore iure est sequi natus
-                    pariatur! Dolore eveniet obcaecati magnam reprehenderit architecto reiciendis labore ex amet? 
-                    Commodi, voluptatibus?</p>
-            </aside>
-        </section>
-        <section class="four-section">
-            <div class="four-section__item">
-                <h1>Cuidados para tu mascota</h1>
-                <ul>
-                    <li><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                        Voluptatum et praesentium earum delectus accusantium 
-                        officia ad exercitationem esse, voluptatem, ipsa quod molestiae! Asperiores
-                         laboriosam fugiat est voluptate molestiae, aut sunt.
-                         <img src="https://github.com/Mogom/VeterinariaDemo/blob/main/Imgs/1140-woman-walking-dog-esp.png?raw=true" alt="">
-                        </p></li>
-                    <li><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                            Voluptatum et praesentium earum delectus accusantium 
-                            officia ad exercitationem esse, voluptatem, ipsa quod molestiae! Asperiores
-                             laboriosam fugiat est voluptate molestiae, aut sunt.
-                             <img src="https://github.com/Mogom/VeterinariaDemo/blob/main/Imgs/rascador.jpg?raw=true" alt="">
-                        </p></li>
-                    <li><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                            Voluptatum et praesentium earum delectus accusantium 
-                            officia ad exercitationem esse, voluptatem, ipsa quod molestiae! Asperiores
-                             laboriosam fugiat est voluptate molestiae, aut sunt.
-                             <img src="https://github.com/Mogom/VeterinariaDemo/blob/main/Imgs/Imagen%20de%20WhatsApp%202024-10-06%20a%20las%2020.41.56_ec4e3ee3.jpg?raw=true" alt="">
-                        </p></li>                              
+            
+            <div class="footer-links">
+                <h4 class="links-title">Información</h4>
+                <ul class="links-list">
+                    <li><a href="#" class="footer-link">Sobre Nosotros</a></li>
+                    <li><a href="#" class="footer-link">Nuestro Equipo</a></li>
+                    <li><a href="#" class="footer-link">Blog</a></li>
+                    <li><a href="#" class="footer-link">Trabaja con Nosotros</a></li>
+                    <li><a href="#" class="footer-link">Preguntas Frecuentes</a></li>
                 </ul>
             </div>
-            <aside  id="four-section-aside" class="four-section__item">
-                <h2>Reseña de usuario</h2>
-                <img src="https://raw.githubusercontent.com/Mogom/VeterinariaDemo/refs/heads/main/Imgs/Notch.webp" alt="">
-                <h3>Nombre de Usuario</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur asperiores suscipit voluptates inventore iure est sequi natus
-                    pariatur! Dolore eveniet obcaecati magnam reprehenderit architecto reiciendis labore ex amet? 
-                    Commodi, voluptatibus?</p>
-            </aside>
-        </section>
-        <section class="five-section">
-            <h1>Sedes</h1>
-            <div class="five-section__item">
-                <h3>Primera Sede
-
-                    <p>CALLE ## - 234AV ###</p>
-                </h3>
-                <img src="https://github.com/Mogom/VeterinariaDemo/blob/main/Imgs/20921-Centro-Veterinario-Marina-Ibarguen-QH2S6.jpg?raw=true" alt="">
+            
+            <div class="footer-contact">
+                <h4 class="links-title">Contacto</h4>
+                <ul class="contact-list">
+                    <li><i class="fas fa-phone-alt"></i> 311 467 5099</li>
+                    <li><i class="fas fa-envelope"></i> info@overpets.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Calle 123 #45-67, Bogotá</li>
+                </ul>
+                <div class="footer-newsletter">
+                    <h5>Suscríbete a nuestro boletín</h5>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Tu correo electrónico">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
             </div>
-            <div class="five-section__item">
-                <h3>Segunda Sede
-
-                    <p>CALLE ## - 234AV ###</p>
-                </h3>
-                <img src="https://github.com/Mogom/VeterinariaDemo/blob/main/Imgs/fachada-faunia.jpg?raw=true" alt="">
-                
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="bottom-container">
+                <p class="copyright">&copy; 2023 OverPets. Todos los derechos reservados.</p>
+                <ul class="legal-links">
+                    <li><a href="#">Términos y condiciones</a></li>
+                    <li><a href="#">Política de privacidad</a></li>
+                    <li><a href="#">Aviso legal</a></li>
+                </ul>
             </div>
-            <div class="five-section__item">
-                <h3>Tercera Sede
-
-                    <p>CALLE ## - 234AV ###</p>
-                </h3>
-                <img src="https://github.com/Mogom/VeterinariaDemo/blob/main/Imgs/frontispng.png?raw=true" alt="">
-
-            </div>
-        </section>
-    </main>
-    <footer>
-        <img src="./img/[removal.ai]_5d625402-0c5d-4fad-bd96-36bf9bd0dfd6-ed5f3a15d92ba3ac6238a98da42bb01e.png" alt="">
-        <ul class="main-footer">
-            <li class="main-footer__item">Facebook<k</li>
-            <li class="main-footer__item">Instagram</li>
-            <li class="main-footer__item">Twitter</li>
-            <li class="main-footer__item">Threads</li>
-            <li class="main-footer__item">Whattsapp</li>
-        </ul>
-        <ul class="main-footer2">
-            <li class="main-footer2__item">Términos y condiciones<k</li>
-            <li class="main-footer2__item">Términos y condiciones Banco</li>
-            <li class="main-footer2__item">Protección de datos</li>
-            <li class="main-footer2__item">Términos y condiciones de Servicios de Agendamiento</li>
-            <li class="main-footer2__item">Términos y condiciones Movilidad Movet</li>
-        </ul>
+        </div>
     </footer>
+
+    <!-- Botón flotante de WhatsApp -->
+    <a href="#" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="/scripts/script.js"></script>
 </body>
 </html>

@@ -3,51 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/register_mascota.css">
-    <title>RegistroMascota</title>
+    <title>OverPets - Formularios</title>
+    <link rel="stylesheet" href="../CSS/forms.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
-    <header>
-        <img src="../img/[removal.ai]_5d625402-0c5d-4fad-bd96-36bf9bd0dfd6-ed5f3a15d92ba3ac6238a98da42bb01e.png" alt="" class="header-logo">
-        <h1 class="main-titulo">Registro de Mascota</h1>
-        <button class="boton-salir" href="../index.html"><img src="https://cdn-icons-png.flaticon.com/512/61/61208.png" alt="">Home</button>
-    </header>
-    <main>
-        <form class="register-form" action="">
-            <label for="nombre">Nombre:</label>
-            <input type="input" class="main-form__item" id="nombre" name="nombre" required>
+<body class="form-page">
+    <div class="form-container">
+        <!-- Header consistente -->
+        <header class="form-header">
+            <div class="header-content">
+                <img src="../img/[removal.ai]_5d625402-0c5d-4fad-bd96-36bf9bd0dfd6-ed5f3a15d92ba3ac6238a98da42bb01e.png" alt="Logo OverPets" class="header-logo">
+                <h1 class="form-title">Login</h1>
+                <a href="../index.html" class="home-btn">
+                    <i class="fas fa-home"></i> Inicio
+                </a>
+            </div>
+        </header>
 
-            <label for="especie">Especie:</label>
-            <select name="especie" class="main-form__item" id="especie" required>
-                <option value="Perro">Perro</option>
-                <option value="Gato">Gato</option>
-                <option value="Conejo">Conejo</option>
-                <option value="Otro">Otro</option>
-            </select>
+        <!-- Contenido principal -->
+        <main class="form-main">
 
-            <label for="raza">Raza:</label>
-            <input type="input" class="main-form__item" id="raza" name="raza" required>
 
-            <label for="sexo">Sexo:</label>
-            <select name="sexo" class="main-form__item" id="sexo" required>
-                <option value="Macho">Macho</option>
-                <option value="Hembra">Hembra</option>
-            </select>
 
-            <label for="peso">Peso (kg):</label>
-            <input type="number" class="main-form__item" id="peso" name="peso" min="0" step="0.1" required>
+            
+            <form class="modern-form" id="register-pet-form">
+                <div class="form-header">
+                    <h2><i class="fas fa-paw"></i> Registro de Mascota</h2>
+                    <p>Completa los datos de tu mascota</p>
+                </div>
+            
+                <div class="form-group">
+                    <label for="pet-name">Nombre de la Mascota</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-dog"></i>
+                        <input type="text" id="pet-name" name="pet-name" placeholder="Nombre de tu mascota" required>
+                    </div>
+                </div>
+            
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="pet-species">Especie</label>
+                        <div class="select-with-icon">
+                            <i class="fas fa-cat"></i>
+                            <select id="pet-species" name="pet-species" required>
+                                <option value="" disabled selected>Seleccione</option>
+                                <option value="Perro">Perro</option>
+                                <option value="Gato">Gato</option>
+                                <option value="Conejo">Conejo</option>
+                                <option value="Ave">Ave</option>
+                                <option value="Otro">Otro</option>
+                            </select>
+                        </div>
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="pet-breed">Raza</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-dna"></i>
+                            <input type="text" id="pet-breed" name="pet-breed" placeholder="Raza o mezcla" required>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="pet-gender">Sexo</label>
+                        <div class="select-with-icon">
+                            <i class="fas fa-venus-mars"></i>
+                            <select id="pet-gender" name="pet-gender" required>
+                                <option value="" disabled selected>Seleccione</option>
+                                <option value="Macho">Macho</option>
+                                <option value="Hembra">Hembra</option>
+                            </select>
+                        </div>
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="pet-age">Edad (años)</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-birthday-cake"></i>
+                            <input type="number" id="pet-age" name="pet-age" min="0" max="30" placeholder="Edad aproximada" required>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="pet-weight">Peso (kg)</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-weight"></i>
+                            <input type="number" id="pet-weight" name="pet-weight" min="0" step="0.1" placeholder="Peso actual" required>
+                        </div>
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="pet-birthdate">Fecha de Nacimiento (opcional)</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-calendar"></i>
+                            <input type="date" id="pet-birthdate" name="pet-birthdate">
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="form-group">
+                    <label for="pet-photo">Foto de la Mascota (opcional)</label>
+                    <div class="file-upload">
+                        <label for="pet-photo" class="upload-btn">
+                            <i class="fas fa-camera"></i> Seleccionar Imagen
+                        </label>
+                        <input type="file" id="pet-photo" name="pet-photo" accept="image/*">
+                        <span class="file-name">Ningún archivo seleccionado</span>
+                    </div>
+                </div>
+            
+                <div class="form-actions">
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-save"></i> Registrar Mascota
+                    </button>
+                </div>
+            </form>
+        </main>
+    </div>
 
-            <label for="edad">Edad (años):</label>
-            <input type="number" class="main-form__item" id="edad" name="edad" min="0" required>
-
-            <input type="submit" id="registrar" class="main-form__item" value="Registrar Mascota">
-        </form>
-        <aside class="main-aside">
-            <img src="https://github.com/Mogom/VeterinariaDemo/blob/main/Imgs/%5Bremoval.ai%5D_181ee0a4-d9d4-4b7a-9429-4ed02de7add6-captura-de-pantalla-2024-10-08-200743.png?raw=true" alt="" class="main-aside__item">
-            <h1 class="main-aside__item">OverPets</h1>
-            <p class="main-aside__item">Velamos por la salud de tu mascota.</p>
-        </aside>
-    </main>
-    <footer></footer>
+    <script src="../scripts/forms.js"></script>
 </body>
 </html>
+
+

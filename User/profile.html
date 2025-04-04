@@ -1,76 +1,197 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuario - OverPets</title>
     <link rel="stylesheet" href="../CSS/profile.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <img src="../img/[removal.ai]_5d625402-0c5d-4fad-bd96-36bf9bd0dfd6-ed5f3a15d92ba3ac6238a98da42bb01e.png" alt="" class="header-logo">
-        <h1 class="main-titulo">Perfil Usuario</h1>
-        <a class="boton-salir" href="../index.html"><img src="https://cdn-icons-png.flaticon.com/512/61/61208.png"  href="../index.html" alt="">Home</a>
-    </header>
-    <main>
-        <section class="aside-usuario">
-            <div class="aside-usuario__item">
-                <img src="https://raw.githubusercontent.com/Mogom/VeterinariaDemo/refs/heads/main/Imgs/cierre-dientes-hombre-moreno-sonriendo_1187-5800.avif" alt="">
-                <p>Datos de usuario</p>
-                <button><a href="">Modificar Datos</a></button>
-                <button><a href="profile_mascotas.html">Mascotas del usuario</a></button>
-                <button><a href="">Calendario</a></button>
+    <div class="profile-container">
+        <!-- Header -->
+        <header class="profile-header">
+            <div class="header-content">
+                <img src="../img/[removal.ai]_5d625402-0c5d-4fad-bd96-36bf9bd0dfd6-ed5f3a15d92ba3ac6238a98da42bb01e.png" alt="Logo OverPets" class="header-logo">
+                <h1 class="profile-title">Mi Perfil</h1>
+                <a href="../index.html" class="home-btn">
+                    <i class="fas fa-home"></i> Inicio
+                </a>
             </div>
-        </section>
-        <section class="main-calendario">
-            <div class="calendario__titulo">
-                <h2>Mes del año</h2>
-            </div>
-            <ol class="calendario">
-                <h6>lunes</h6>
-                <h6>Martes</h6>
-                <h6>Miercoles</h6>
-                <h6>Jueves</h6>
-                <h6>Viernes</h6>
-                <h6>Sabado</h6>
-                <h6>Domingo</h6>
-                <li id="dia-1" class="calendario__dia"></li>
-                <li id="dia-2" class="calendario__dia"></li>
-                <li id="dia-3" class="calendario__dia"></li>
-                <li id="dia-4" class="calendario__dia"></li>
-                <li id="dia-5" class="calendario__dia"></li>
-                <li id="dia-6" class="calendario__dia"></li>
-                <li id="dia-7" class="calendario__dia"></li>
-                <li id="dia-8" class="calendario__dia"></li>
-                <li id="dia-9" class="calendario__dia"></li>
-                <li id="dia-10" class="calendario__dia"></li>
-                <li id="dia-11" class="calendario__dia"></li>
-                <li id="dia-12" class="calendario__dia"></li>
-                <li id="dia-13" class="calendario__dia"></li>
-                <li id="dia-14" class="calendario__dia"></li>
-                <li id="dia-15" class="calendario__dia"></li>
-                <li id="dia-16" class="calendario__dia"></li>
-                <li id="dia-17" class="calendario__dia"></li>
-                <li id="dia-18" class="calendario__dia"></li>
-                <li id="dia-19" class="calendario__dia"></li>
-                <li id="dia-20" class="calendario__dia"></li>
-                <li id="dia-21" class="calendario__dia"></li>
-                <li id="dia-22" class="calendario__dia"></li>
-                <li id="dia-23" class="calendario__dia"></li>
-                <li id="dia-24" class="calendario__dia"></li>
-                <li id="dia-25" class="calendario__dia"></li>
-                <li id="dia-26" class="calendario__dia"></li>
-                <li id="dia-27" class="calendario__dia"></li>
-                <li id="dia-28" class="calendario__dia"></li>
-                <li id="dia-29" class="calendario__dia"></li>
-                <li id="dia-30" class="calendario__dia"></li>
-                <li id="dia-31" class="calendario__dia"></li>
-            </ol>
-        </section>
-    </main>
-    <footer>
-        
-    </footer>
+        </header>
+
+        <!-- Main Content -->
+        <main class="profile-main">
+            <!-- Sidebar -->
+            <aside class="profile-sidebar">
+                <div class="user-card">
+                    <div class="user-avatar">
+                        <img src="https://raw.githubusercontent.com/Mogom/VeterinariaDemo/refs/heads/main/Imgs/cierre-dientes-hombre-moreno-sonriendo_1187-5800.avif" alt="Foto de perfil">
+                        <button class="edit-avatar-btn">
+                            <i class="fas fa-camera"></i>
+                        </button>
+                    </div>
+                    <h3 class="user-name">Juan Pérez</h3>
+                    <p class="user-email">juan.perez@example.com</p>
+                    
+                    <nav class="profile-nav">
+                        <button class="nav-btn active" data-section="calendar">
+                            <i class="fas fa-calendar-alt"></i> Calendario
+                        </button>
+                        <button class="nav-btn" data-section="pets">
+                            <i class="fas fa-paw"></i> Mis Mascotas
+                        </button>
+                        <button class="nav-btn" data-section="data">
+                            <i class="fas fa-user-edit"></i> Mis Datos
+                        </button>
+                        <button class="nav-btn" data-section="settings">
+                            <i class="fas fa-cog"></i> Configuración
+                        </button>
+                    </nav>
+                </div>
+            </aside>
+
+            <!-- Main Content Area -->
+            <section class="profile-content">
+                <!-- Calendar Section (Default) -->
+                <div class="content-section active" id="calendar-section">
+                    <div class="section-header">
+                        <h2><i class="fas fa-calendar-alt"></i> Calendario</h2>
+                        <div class="month-selector">
+                            <button class="month-nav-btn" id="prev-month"><i class="fas fa-chevron-left"></i></button>
+                            <h3 class="current-month">Noviembre 2023</h3>
+                            <button class="month-nav-btn" id="next-month"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                    
+                    <div class="calendar">
+                        <div class="calendar-weekdays">
+                            <div class="weekday">Lun</div>
+                            <div class="weekday">Mar</div>
+                            <div class="weekday">Mié</div>
+                            <div class="weekday">Jue</div>
+                            <div class="weekday">Vie</div>
+                            <div class="weekday">Sáb</div>
+                            <div class="weekday">Dom</div>
+                        </div>
+                        
+                        <div class="calendar-days" id="calendar-days">
+                            <!-- Days will be populated by JavaScript -->
+                        </div>
+                    </div>
+                    
+                    <div class="appointments-list">
+                        <h3>Próximas citas</h3>
+                        <div class="appointment-card">
+                            <div class="appointment-date">
+                                <span class="appointment-day">15</span>
+                                <span class="appointment-month">Nov</span>
+                            </div>
+                            <div class="appointment-info">
+                                <h4>Vacunación anual - Max</h4>
+                                <p><i class="fas fa-clock"></i> 10:30 AM</p>
+                                <p><i class="fas fa-map-marker-alt"></i> Sede Principal</p>
+                            </div>
+                            <button class="appointment-action">
+                                <i class="fas fa-ellipsis-v"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pets Section -->
+                <div class="content-section" id="pets-section">
+                    <div class="section-header">
+                        <h2><i class="fas fa-paw"></i> Mis Mascotas</h2>
+                        <button class="add-pet-btn">
+                            <i class="fas fa-plus"></i> Añadir Mascota
+                        </button>
+                    </div>
+                    
+                    <div class="pets-grid" id="pets-grid">
+                        <!-- Pets will be populated by JavaScript -->
+                    </div>
+                </div>
+
+                <!-- User Data Section -->
+                <div class="content-section" id="data-section">
+                    <div class="section-header">
+                        <h2><i class="fas fa-user-edit"></i> Mis Datos</h2>
+                    </div>
+                    
+                    <form class="user-data-form">
+                        <div class="form-group">
+                            <label for="name">Nombre completo</label>
+                            <input type="text" id="name" value="Juan Pérez">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" id="email" value="juan.perez@example.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Teléfono</label>
+                            <input type="tel" id="phone" value="+57 311 467 5099">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="address">Dirección</label>
+                            <input type="text" id="address" value="Calle 123 #45-67, Bogotá">
+                        </div>
+                        
+                        <button type="submit" class="save-btn">
+                            <i class="fas fa-save"></i> Guardar Cambios
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Settings Section -->
+                <div class="content-section" id="settings-section">
+                    <div class="section-header">
+                        <h2><i class="fas fa-cog"></i> Configuración</h2>
+                    </div>
+                    
+                    <div class="settings-options">
+                        <div class="setting-option">
+                            <i class="fas fa-bell"></i>
+                            <div>
+                                <h4>Notificaciones</h4>
+                                <p>Configura cómo recibir notificaciones</p>
+                            </div>
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                        
+                        <div class="setting-option">
+                            <i class="fas fa-lock"></i>
+                            <div>
+                                <h4>Seguridad</h4>
+                                <p>Cambia tu contraseña y configuración de seguridad</p>
+                            </div>
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                        
+                        <div class="setting-option">
+                            <i class="fas fa-moon"></i>
+                            <div>
+                                <h4>Modo Oscuro</h4>
+                                <p>Cambia el tema de la aplicación</p>
+                            </div>
+                            <div class="toggle-switch">
+                                <input type="checkbox" id="dark-mode">
+                                <label for="dark-mode"></label>
+                            </div>
+                        </div>
+                        
+                        <button class="logout-btn">
+                            <i class="fas fa-sign-out-alt"></i> Cerrar Sesión
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
     <script src="../scripts/user.js"></script>
 </body>
 </html>
